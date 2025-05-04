@@ -15,9 +15,9 @@ int main()
         return 1;
     }
 
-    int *s = calloc(size, sizeof(int));
+    int *scores = calloc(size, sizeof(int));
 
-    if (s == NULL) {
+    if (!scores) {
         fprintf(stderr, "Memory Allocation failed!\n");
         return 1;
     }
